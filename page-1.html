@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('./bg-pg-1/mathematics-snya5mv2dogewetc.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        
+        }
+
+        .calculator {
+            background-color:lightsalmon;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .calculator h1 {
+            text-align: center;
+        }
+
+        input[type="number"] {
+            width: 87%;
+            padding: 15px;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            font-size: 18px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            color: black;
+        }
+
+        .f {
+            background-color: rgb(247, 255, 90);
+        }
+
+        .r {
+            background-color: rgb(8, 226, 92);
+        }
+
+        #e {
+            background-color: rgb(255, 0, 0);
+            color: white;
+        }
+
+        button:hover {
+           background-color: lightseagreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Calculator</h1>
+        <input type="number">
+
+        <table>
+            <tr>
+                <td><button class="1">1</button></td>
+                <td><button class="2">2</button></td>
+                <td><button class="3">3</button></td>
+                <td><button class="+">+</button></td>
+            </tr>
+            <tr>
+                <td><button class="4">4</button></td>
+                <td><button class="5">5</button></td>
+                <td><button class="6">6</button></td>
+                <td><button class="-">-</button></td>
+            </tr>
+            <tr>
+                <td><button class="7">7</button></td>
+                <td><button class="8">8</button></td>
+                <td><button class="9">9</button></td>
+                <td><button class="*">*</button></td>
+            </tr>
+            <tr>
+                <td><button id="C">C</button></td>
+                <td><button class="1">0</button></td>
+                <td><button id="=">=</button></td>
+                <td><button class="/">/</button></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
