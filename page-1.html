@@ -18,18 +18,23 @@
         }
 
         .calculator {
-            background-color:lightsalmon;
+            background-color:rgb(90, 96, 88);
+            border: 10px solid rgb(119, 202, 223);
+            border-radius: 50px;
             padding: 20px;
-            border-radius: 10px;
             
         }
 
         .calculator h1 {
             text-align: center;
+            color: rgb(118, 57, 8);
         }
 
         input {
             width: 87%;
+            border-radius: 20px;
+            border:rgb(119, 202, 223) 5px solid;
+            text-align: right;
             padding: 15px;
             font-size: 20px;
             margin-bottom: 10px;
@@ -40,65 +45,70 @@
         }
 
         td {
+            width: 60px;
+            height: 60px;
             padding: 5px;
         }
 
         button {
+            background-color: rgb(202, 234, 142);
+            color: rgb(7, 36, 227);
             width: 100%;
             padding: 15px;
             font-size: 18px;
-            border: none;
-            border-radius: 50px;
-            cursor: pointer;
-            color: black;
+            border: 5px solid rgb(48, 52, 53);
+            border-radius: 20px;
         }
-
-        .f {
-            background-color: rgb(247, 255, 90);
+        button:hover {
+            background-color: rgb(246, 148, 226);
         }
-
-        .r {
-            background-color: rgb(8, 226, 92);
+        .f button:hover {
+           background-color: rgb(5, 1, 17);
         }
-
-        #e {
+        .r button:hover {
             background-color: rgb(255, 0, 0);
             color: white;
         }
-
-        button:hover {
-           background-color: lightseagreen;
+        .t button:hover {
+            background-color: rgb(36, 185, 36);
+            color: white;
         }
+        
     </style>
 </head>
 <body>
     <div class="calculator">
-        <h1>Calculator</h1>
-        <input type="number">
+        <input type="text">
 
         <table>
             <tr>
-                <td><button class="1">1</button></td>
-                <td><button class="2">2</button></td>
-                <td><button class="3">3</button></td>
+                <td class="r"><button>ac</button></td>
+                <td class="f"><button>,</button></td>
+                <td class="f"><button>></button></td>
+                <td class="f"><button><</button></td>
+            </tr>
+            <tr>
+                <td><button>1</button></td>
+                <td><button>2 </button></td>
+                <td><button>3</button></td>
                 <td class="f"><button class="+">+</button></td>
             </tr>
             <tr>
-                <td><button class="4">4</button></td>
-                <td><button class="5">5</button></td>
-                <td><button class="6">6</button></td>
+                <td><button>4</button></td>
+                <td><button>5</button></td>
+                <td><button>6</button></td>
                 <td class="f"><button class="-">-</button></td>
             </tr>
             <tr>
-                <td><button class="7">7</button></td>
-                <td><button class="8">8</button></td>
-                <td><button class="9">9</button></td>
+                <td><button>7</button></td>
+                <td><button>8</button></td>
+                <td><button>9</button></td>
                 <td class="f"><button class="*">*</button></td>
             </tr>
             <tr>
-                <td id="e"><button id="C">C</button></td>
-                <td><button class="1">0</button></td>
-                <td class="r"><button id="=">=</button></td>
+                <td class="r"><button id="C">C</button></td>
+                <td><button>0</button></td>
+                <td class="t"><button id="=">=</button></td>
                 <td class="f"><button class="/">/</button></td>
             </tr>
         </table>
